@@ -35,7 +35,7 @@ template = '''
         }
         nav ul li {
             display: inline;
-            margin-right: 20px;
+            margin-right: 30px;
         }
         nav ul li a {
             color: white;
