@@ -13,7 +13,7 @@ template = '''
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>서울시 피트니스 네트워크</title>
+    <title>시 피트니스 네트워크</title>
     <style>
         * {
             margin: 0;
