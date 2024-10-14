@@ -117,10 +117,11 @@ template = '''
         <h1>서울시 피트니스 네트워크</h1>
         <nav>
             <ul>
-                <li><a href="#home">홈</a></li>
-                <li><a href="#search">챗봇</a></li>
-                <li><a href="#trainers">커뮤니티</a></li>
-                <li><a href="#community">마이 페이지</a></li>
+                <li><a href="#home">미정</a></li>
+                <li><a href="#search">미정</a></li>
+                <li><a href="#trainers">미정</a></li>
+                <li><a href="#community">미정
+                </a></li>
             </ul>
         </nav>
     </header>
@@ -146,7 +147,7 @@ template = '''
     </section>
 
     <section id="chatbot">
-        <h2>ChatGPT 챗봇</h2>
+        <h2>GYM 챗봇</h2>
         <div class="chat-container">
             <div id="chat-box" class="chat-box">
                 <p><strong>챗봇:</strong> 안녕하세요! 무엇을 도와드릴까요?</p>
