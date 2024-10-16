@@ -192,14 +192,16 @@ template = '''
 </html>
 '''
 
-# ChatGPT API를 호출하는 함수
 def generate_response(user_input):
-    response = openai.Completion.create(
-        engine="gpt-3.5-turbo-instruct",
-        prompt=user_input,
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": user_input}
+        ],
         max_tokens=100
     )
-    return response.choices[0].text.strip()
+    return response.choices[0].message['content'].strip()
 
 @app.route('/')
 def home():
