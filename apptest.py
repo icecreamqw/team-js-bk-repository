@@ -5,7 +5,6 @@ import openai
 
 # OpenAI API 키 설정 (본인의 OpenAI API 키를 사용하세요)
 openai.api_key = ''
-
 app = Flask(__name__)
 
 # HTML, CSS, JavaScript 포함된 템플릿
