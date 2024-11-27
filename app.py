@@ -2,7 +2,7 @@ from flask import Flask, render_template_string, request, jsonify
 import openai
 
 # OpenAI API 키 설정 (본인의 OpenAI API 키를 사용하세요)
-openai.api_key = ''
+openai.api_key = ${{ secrets.openai.api_key }}
 
 app = Flask(__name__)
 
