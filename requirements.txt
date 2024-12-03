@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+scikit-learn
+torch
+transformers
+openai
+chardet
+folium
+streamlit_folium
