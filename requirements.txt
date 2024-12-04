@@ -4,7 +4,7 @@ numpy
 scikit-learn
 torch
 transformers
-openai
+openai==0.28
 chardet
 folium
 streamlit_folium
