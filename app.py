@@ -28,7 +28,6 @@ data = load_data(FILE_PATH)
 
 # Main application
 st.title("서울시 체육 네트워크")
-st.subheader('원하시는 구를 클릭하세요')
 st.sidebar.header("메뉴")
 
 menu = st.sidebar.selectbox(
@@ -38,7 +37,7 @@ menu = st.sidebar.selectbox(
 
 if menu == "홈":
 
-    
+    st.subheader('원하시는 구를 클릭하세요')
     # Create Folium map
     seoul_map = folium.Map(location=[37.5665, 126.9780], zoom_start=11)
 
@@ -90,7 +89,7 @@ if menu == "홈":
         if last_clicked and "last_object_clicked_popup" in clicked_data:
             # Extract district name
             district = clicked_data["last_object_clicked_popup"].strip()
-            st.info(f"클릭한 구: {district}(자세한 내용은 구 별 데이터에서 확인하세요.)")
+            st.info(f"클릭한 구: {district}(자세한 내용 및 검색은 구 별 데이터에서 확인하세요.)")
            
 
             
@@ -212,4 +211,3 @@ if menu == "챗봇":
             st.markdown(f"**사용자:** {message['content']}")
         else:
             st.markdown(f"**챗봇:** {message['content']}")
-
